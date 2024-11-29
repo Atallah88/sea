@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Agbalumo, Helvetica, sans-serif;
+}
+
+.filterDiv {
+  float: left;
+  color: #ffffff;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.container .filterDiv img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/80/18/9c/80189ccf50cf5cd944d8d27b4a9703f5.gif");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: DarkSlateGray;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: DarkSlateGray;
+  padding: 70px;
+  text-align: center;
+  color: black;
+}
+
+/* Add spacing for content section */
+#content {
+  padding-top: 100px; /* Space above content */
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am John Doe</h1>
+    <p>And I'm a Photographer</p>
+    <!-- Use anchor to navigate to content -->
+    <a href="#content"><button>Start</button></a>
+  </div>
+</div>
+
+<!-- Content section with an id of "content" -->
+<p id="content">Page Content..</p>
+
+<footer>
+  <p>Hello!</p>
+</footer>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Sea</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/1c/3e/6c/1c3e6cf5100fc66db16880281354fcdf.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/2e/ed/44/2eed44f570439b0f196db6a1fe51f741.gif" alt="sea"> 
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/61/f9/51/61f951ee6770732cba132c4b89c316b5.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/04/d7/50/04d750329c4709b92335dda281b831ce.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/aa/f9/3d/aaf93d9a60cd6684a8a1e83dfabdab91.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/17/09/4e/17094eb62bfe6588adc3cde43cfccbe0.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/9f/40/34/9f403475da2a117ff5074c7d661753e2.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/ef/3b/42/ef3b42ceb18014af07c46182bacf1f0b.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/36/52/4b/36524ba103c5812a53e8c37f7ed22179.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/e7/34/c0/e734c0e8717c3a246c2c65465cd7b679.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/aa/58/1a/aa581a04b7e3bf4435f27194984f8237.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/06/cb/a8/06cba8401060eb4c5c011097add56fca.gif" alt="sea">
+  </div>
+
+  <div class="filterDiv cars">
+    <img src="https://i.pinimg.com/originals/c6/c6/98/c6c6989cf3a519d580322352fcd2a6eb.gif" alt="sea">
+  </div>
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/e1/db/fa/e1dbfa949d44690e2f6af24db133751e.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/f6/d2/22/f6d2222de0972e2110af6a12cf900ab1.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/bb/5b/32/bb5b328282f90cd0696d1f90e1c9b330.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/da/05/98/da059826094c6c8f24ab799f79b117ad.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/7e/3d/4d/7e3d4dc6433ab4b69e29bb9fc0c84ba5.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/10/3b/0c/103b0c60f03a07aa3ee9ea8c51f31460.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/11/dc/11/11dc11ff4fa29fb9110c89ef42579568.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/4a/37/15/4a371524cf385c297c035eb119717cd6.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/57/1c/97/571c97624076944ecfb92766321bfc4a.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/c1/7d/3d/c17d3d8ce15349ef8fb2875b769fa59d.gif" alt="sea">
+</div>
+
+<div class="filterDiv cars">
+<img src="https://i.pinimg.com/originals/e8/8b/37/e88b379e9485daf043adac7b471c91aa.gif" alt="sea">
+</div>
+</div>
+
+<script>
+filterSelection("all");
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    var pos = arr1.indexOf(arr2[i]);
+    if (pos > -1) {
+      arr1.splice(pos, 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+</script>
+
+</body>
+</html>
